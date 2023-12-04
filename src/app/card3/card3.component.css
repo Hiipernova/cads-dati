@@ -1,0 +1,48 @@
+.card-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  max-width: 250px;
+  width: 100%;
+  height: 250px;
+  padding: 20px; 
+  background-color: #fbff00;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: auto;
+}
+
+.face.front {
+  position: relative;
+  z-index: 2;
+}
+
+.image-with-text {
+  position: relative;
+  z-index: 1;
+  text-align: center; /* Alinha o texto no centro da imagem */
+}
+
+.text-above-image {
+  margin-top: -20px; /* Ajuste a margem superior conforme necessário */
+  padding: 0;
+  font-size: 1.5em;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.card:hover .text-above-image {
+  font-size: 1em;
+}
+
+
+
+
